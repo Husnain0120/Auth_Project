@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Sign1.css'
 function SignIn() {
   return (
@@ -19,8 +20,11 @@ function SignIn() {
           alt="Your Company"
         />
         <h2 className="mt-10 text-center  text-2xl font-bold leading-9 tracking-tight text-gray-900">
-          Welcome back
+          Welcome back 
         </h2>
+        <p className=" text-sm text-center  font-bold leading-9 tracking-tight text-gray-900">
+          If you have no account <span><Link to="/" className=" font-mono text-blue-700 hover:underline">Signup</Link></span> 
+        </p>
       </div>
 
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
